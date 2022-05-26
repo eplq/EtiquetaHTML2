@@ -1,0 +1,15 @@
+{
+    "name": "eplq/etiqueta-html2",
+    "autoload": {
+        "psr-4": {
+            "ITEC\\DAW\\HTML2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "eplq",
+            "email": "91148468+eplq@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
