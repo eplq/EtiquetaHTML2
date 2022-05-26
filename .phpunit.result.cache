@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"ITEC\\DAW\\Tests\\AttributeTest::testAttribute":0.002}}
+{"version":1,"defects":{"ITEC\\DAW\\Tests\\AttributeList::testAttributeList":4,"ITEC\\DAW\\Tests\\TagTest::testTag":4,"ITEC\\DAW\\Tests\\TagTest::testContent":3},"times":{"ITEC\\DAW\\Tests\\AttributeTest::testAttribute":0,"ITEC\\DAW\\Tests\\AttributeList::testAttributeList":0.002,"ITEC\\DAW\\Tests\\AttributeListTest::testAttributeList":0.002,"ITEC\\DAW\\Tests\\TagTest::testTag":0,"ITEC\\DAW\\Tests\\TagTest::testContent":0.001,"ITEC\\DAW\\Tests\\TagTest::testAttribute":0}}

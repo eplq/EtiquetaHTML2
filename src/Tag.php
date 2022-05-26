@@ -11,8 +11,8 @@ class Tag
     public function __construct(string $name)
     {
         $this->name = $name;
-        $this->attributes = [];
-        $this->content = null;
+        $this->attributes = new AttributeList();
+        $this->content = [];
     }
 
     public function getName()
@@ -25,9 +25,17 @@ class Tag
         array_push($this->content, $tag);
     }
 
+    public function addAttribute(Attribute $attribute)
+    {
+        $this->attributes->addAttribute($attribute);
+    }
+
     public function getHTML()
     {
         $result = "<$this->name ";
+        if ($this->attributes->count() == 0) {
+            $result = "<$this->name";
+        }
         $result .= $this->attributes->getHTML();
         $result .= ">";
 
@@ -35,7 +43,7 @@ class Tag
             $result .= $element->getHTML();
         }
 
-        $result .= "<$this->name>";
+        $result .= "</$this->name>";
 
         return $result;
     }

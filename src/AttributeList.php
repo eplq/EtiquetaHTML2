@@ -22,4 +22,9 @@ class AttributeList
             return $carry . $item->getHTML() . " ";
         }, ""));
     }
+
+    public function count()
+    {
+        return count($this->attributes);
+    }
 }
